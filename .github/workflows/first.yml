@@ -8,7 +8,7 @@ on:
       - qa
 
 jobs: 
-  first_job:
+  lint_job:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -25,7 +25,10 @@ jobs:
 
       - name: run ESLint in app
         run: npm run lint  
-
+           
+  test_job:
+    runs-on: ubuntu-latest
+    steps:      
       - name: make react build
         run: npm run build
 
