@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <h1>Code step bt step</h1>
+      <h1>Code step by step</h1>
     </>
   )
 }
