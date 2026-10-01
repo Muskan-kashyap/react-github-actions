@@ -23,5 +23,8 @@ jobs:
       - name: install dependencies
         run: npm ci  
 
+      - name: run ESLint in app
+        run: npm run lint  
+
       - name: make react build
         run: npm run build
